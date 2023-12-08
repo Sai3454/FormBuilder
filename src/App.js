@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import CategoryForm from './Components/CategoryForm';
+import CategoryPreview from './Components/CategoryPreview';
+import ComprehensionPreview from './Components/ComprehensionPreview';
+import FormBuilder from './Components/FormBuilder';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <CategoryForm type="categorize" number={2}/> */}
+      <FormBuilder />
+      {/* <CategoryPreview number={2}/> */}
     </div>
   );
 }
